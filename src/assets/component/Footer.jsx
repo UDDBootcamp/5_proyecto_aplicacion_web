@@ -1,11 +1,9 @@
+const Footer = () => {
+  return (
+    <div className="container">
+      <p>Footer</p>
+    </div>
+  );
+};
 
-
-const Footer =()=>{
-    return(
-        <>
-        <p>Footer</p>
-        </>
-    )
-}
-
-export default Footer
+export default Footer;
