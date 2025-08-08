@@ -18,16 +18,18 @@
     padding: 0;
     margin: 0;
 }
-
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: #555bd5;
+  text-decoration: none;
 }
-a:hover {
-  color: #535bf2;
+a .card:hover {
+  color: #555bd5;
+  background-color: #f9f9f9;
 }
-
+a .card img:hover {
+  background-color: transparent;
+}
 body {
   margin: 0;
   min-width: 320px;
@@ -58,13 +60,14 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 .navbar {
   display: flex;
   gap: 1rem;
   padding: 1rem 0;
 }
-
+.list-group-item {
+  background-color: transparent;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
