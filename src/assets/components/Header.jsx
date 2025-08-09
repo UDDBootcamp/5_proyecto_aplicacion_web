@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const pages = [
     { name: "Home", path: "/" },
-    { name: "Sobre Nosotros", path: "/sobre-nosotros" },
+    { name: "Buscar", path: "/buscar" },
   ];
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
