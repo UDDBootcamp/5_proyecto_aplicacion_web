@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 const CharacterDetail = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const character = location.state?.character;
+  const character = location.state?.characterResult;
 
   useEffect(() => {
     if (!character) {
@@ -46,17 +46,17 @@ const CharacterDetail = () => {
             <p className="card-text m-0">
               <small className="text-body-secondary">
                 <b>Origen: </b>
-                {character?.origin.name}
+                {character?.origin?.name}
               </small>
             </p>
             <p className="card-text m-0">
               <small className="text-body-secondary">
-                <b>Ubicación: </b> {character?.location.name}
+                <b>Ubicación: </b> {character?.location?.name}
               </small>
             </p>
             <p className="card-text m-0">
               <small className="text-body-secondary">
-                <b>Cantidad de episodios: </b> {character?.episode.length}
+                <b>Cantidad de episodios: </b> {character?.episode?.length}
               </small>
             </p>
           </div>
