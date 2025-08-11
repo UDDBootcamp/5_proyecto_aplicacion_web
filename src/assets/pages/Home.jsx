@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getUserData } from "../api/api.jsx";
 import CardCharacters from "../components/CardCharacters.jsx";
+import Spinner from "../components/Spinner.jsx";
 
 const Home = () => {
   const [characterResults, setCharactersResults] = useState([]);
@@ -13,12 +14,15 @@ const Home = () => {
   }, []);
 
   if (error) return <p>{error}</p>;
-  if (characterResults.length === 0) return <p>Cargando personajes...</p>;
+  if (characterResults.length === 0) return <Spinner />;
 
   return (
     <div className="d-flex flex-wrap justify-content-center gap-3">
       {characterResults.map((characterResult) => (
-        <CardCharacters characterResult={characterResult} />
+        <CardCharacters
+          key={characterResult.id}
+          characterResult={characterResult}
+        />
       ))}
     </div>
   );
