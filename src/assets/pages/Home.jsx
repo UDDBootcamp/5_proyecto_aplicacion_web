@@ -10,10 +10,15 @@ const Home = () => {
   useEffect(() => {
     getUserData()
       .then((data) => setCharactersResults(data.results))
-      .catch(() => setError("No se obtuvo el personaje"));
+      .catch(() => setError("Error: No se obtuvieron los personajes"));
   }, []);
 
-  if (error) return <p>{error}</p>;
+  if (error)
+    return (
+      <div class="alert alert-danger" role="alert">
+        {error}
+      </div>
+    );
   if (characterResults.length === 0) return <Spinner />;
 
   return (

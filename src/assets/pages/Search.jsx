@@ -12,7 +12,7 @@ function Search() {
 
   const handleSearch = async () => {
     if (!character || !status) {
-      setError("Debes ingresar nombre y estado");
+      setError("Debes ingresar nombre del personaje y estado");
       setCharacterResult(null);
       return;
     }

@@ -1,5 +1,4 @@
 import Header from "./Header";
-import Footer from "./Footer";
 import { Outlet, useLocation } from "react-router-dom";
 import { ErrorBoundary } from "../ErrorBoundary";
 
@@ -14,7 +13,6 @@ const location = useLocation();
           <Outlet />
         </ErrorBoundary>
       </main>
-      <Footer />
     </>
   );
 };
