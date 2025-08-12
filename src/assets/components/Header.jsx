@@ -6,10 +6,10 @@ const Header = () => {
     { name: "Buscar", path: "/buscar" },
   ];
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          Navbar
+          <img src="/logo.svg" alt="Logo" width="40" />
         </Link>
         <button
           className="navbar-toggler"

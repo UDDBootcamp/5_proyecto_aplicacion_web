@@ -18,13 +18,16 @@
     padding: 0;
     margin: 0;
 }
+.navbar-nav .nav-link.active{
+  color: #ffffff;
+}
 a {
   font-weight: 500;
-  color: #555bd5;
+  color: #018b31;
   text-decoration: none;
 }
 a .card:hover {
-  color: #555bd5;
+  color: #018b31;
   background-color: #f9f9f9;
 }
 a .card img:hover {
@@ -35,13 +38,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
   width: 100%;
+  background: #59d018;
 }
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -76,6 +78,21 @@ button:focus-visible {
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 9999;
+}
+.navbar {
+    background: #018b31;
+}
+.card {
+  border: 1px solid #018b31;
+  border-radius: 0 0 8px  8px;
+}
+.btn-primary{
+  background: #795a2e;
+  border: #795a2e;
+}
+.btn-primary:hover, :not(.btn-check)+.btn:active{
+  background: #553c1a;
+  border: #553c1a;
 }
 @media (prefers-color-scheme: light) {
   :root {
